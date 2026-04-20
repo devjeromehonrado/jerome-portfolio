@@ -1,10 +1,9 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function Home() {
-  // Animation Variants
+  // Animation Settings
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
     whileInView: { opacity: 1, y: 0 },
@@ -66,23 +65,13 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* PROFILE BENTO CARD */}
+        {/* PROFILE CARD */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2 }}
           className="bg-[#1A1A1A] border border-[#2a2a2a] rounded-3xl p-10 shadow-2xl"
         >
-          {/* PROFILE IMAGE INTEGRATION */}
-          <div className="w-24 h-24 rounded-full border-4 border-[#F5C400] overflow-hidden mb-8 shadow-[0_0_20px_rgba(245,196,0,0.2)]">
-            <Image 
-              src="/512x512.jpg"  
-              alt="Jerome Honrado"
-              width={512}
-              height={512}
-              className="object-cover w-full h-full"
-            />
-          </div>
+          <div className="w-24 h-24 rounded-full bg-[#2a2200] border-4 border-[#F5C400] flex items-center justify-center text-4xl font-bold text-[#F5C400] mb-8 shadow-[0_0_20px_rgba(245,196,0,0.2)]">JH</div>
           <h3 className="text-2xl font-bold text-white mb-1">Jerome Honrado</h3>
           <p className="text-[#F5C400] text-[13px] mb-8 uppercase tracking-[0.2em] font-bold">Web Designer & Developer</p>
           
@@ -90,7 +79,7 @@ export default function Home() {
             {[
               { num: "10+", label: "Years Exp" },
               { num: "4", label: "Agencies" },
-              { num: "8+", label: "Projects" }
+              { num: "8+", label: "Featured" }
             ].map((stat, i) => (
               <div key={`hero-stat-${i}`} className="bg-[#232323] p-5 rounded-2xl text-center border border-white/5">
                 <div className="text-3xl font-bold text-[#F5C400]">{stat.num}</div>
@@ -100,7 +89,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-            {['WordPress', 'Shopify', 'GHL', 'Elementor', 'UI/UX', 'PHP', 'Laravel'].map((tag, i) => (
+            {['WordPress', 'Shopify', 'GHL', 'Elementor', 'UI/UX', 'PHP', 'Laravel', 'React', 'MySQL'].map((tag, i) => (
               <span key={`hero-tag-${i}`} className="px-4 py-1.5 rounded-lg bg-[#1f1a00] border border-[#3a2f00] text-[#F5C400] text-[11px] font-bold uppercase tracking-wider">
                 {tag}
               </span>
