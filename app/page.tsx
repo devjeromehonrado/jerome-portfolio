@@ -56,7 +56,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-8xl font-bold text-white leading-[0.9] mb-6">
             Jerome <br /> <span className="text-[#F5C400] italic font-normal">Honrado</span>
           </h1>
-          <p className="text-[#888] text-lg tracking-[0.1em] mb-8 uppercase font-medium">Website Designer & Developer</p>
+          <p className="text-[#888] text-lg tracking-[0.1em] mb-8 uppercase font-medium">Full Stack Developer</p>
           <p className="text-[#aaa] text-[15px] leading-relaxed max-w-lg mb-12">
             WordPress & Shopify developer and GoHighLevel expert specializing in high-performing websites that merge sleek aesthetics with seamless functionality.
           </p>
